@@ -1,6 +1,6 @@
 <html> 
 <head> 
-<title>x-webkit-speech test</title> 
+<title>AR.Drone. Voice Controller</title> 
 <style type="text/css">
 
  #talk_name {
@@ -23,6 +23,9 @@ document.superform.submit();
 <center>
 <br />
 <br />
+<br />
+<div id = "main"><font size="20">AR.Drone Voice Controller</font></div>
+<br />
 
 <%= form_for @talk, :url=>{ :action => 'create' },:html => {:name => "superform"}  do |f| %>
 <%= f.text_field :name ,:class => 'recognizer' %>
@@ -32,6 +35,21 @@ document.superform.submit();
 <br />
 
 <input type="text" id="recognition" x-webkit-speech onwebkitspeechchange="speechInput();" />
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div id="author"><h3>Produced by Shohei Aoki, 2012</h3></div>
+
 </center>
 </body> 
 </html> 
