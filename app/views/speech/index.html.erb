@@ -1,4 +1,4 @@
-<html lang="ja"> 
+<html lang="en"> 
 <head> 
 <title>AR.Drone. Voice Controller</title> 
 <style type="text/css">
@@ -16,6 +16,13 @@ var textarea = document.getElementById('talk_name')
 textarea.value = recognized;
 document.superform.submit();
 }
+function setEn(){
+document.documentElement.lang="en"
+}
+function setJa(){
+document.documentElement.lang="ja"
+}
+
 </script>
 </head> 
 <body> 
@@ -37,6 +44,10 @@ document.superform.submit();
 <input type="text" id="recognition" x-webkit-speech onwebkitspeechchange="speechInput();" />
 
 <br />
+<br />
+<br />
+<button id="english" class="btn btn-primary" onclick="setEn()">English</button>
+<button id="japanese" class="btn btn-danger" onclick="setJa()">Japanese</button>
 <br />
 <br />
 <br />
