@@ -1,0 +1,37 @@
+<html> 
+<head> 
+<title>x-webkit-speech test</title> 
+<style type="text/css">
+
+ #talk_name {
+ height : 100px;
+ width : 500px;
+ font-size : 50px
+}
+</style>
+<script>
+function speechInput() {
+var recognized = document.getElementById('recognition').value;
+var textarea = document.getElementById('talk_name')
+textarea.value = recognized;
+document.superform.submit();
+}
+</script>
+</head> 
+<body> 
+
+<center>
+<br />
+<br />
+
+<%= form_for @talk, :url=>{ :action => 'create' },:html => {:name => "superform"}  do |f| %>
+<%= f.text_field :name ,:class => 'recognizer' %>
+<%= f.submit  %>
+<% end %>
+<br />
+<br />
+
+<input type="text" id="recognition" x-webkit-speech onwebkitspeechchange="speechInput();" />
+</center>
+</body> 
+</html> 
