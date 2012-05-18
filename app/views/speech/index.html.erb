@@ -32,9 +32,11 @@ var current_lang = document.documentElement.lang
 if (current_lang == "ja" ) {
 document.documentElement.lang="en"
 document.getElementById("switch_lang").innerText = "English mode"
+document.getElementById("switch_lang").className = "btn btn-primary"
 } else {
 document.documentElement.lang="ja"
 document.getElementById("switch_lang").innerText = "Japanese mode"
+document.getElementById("switch_lang").className  = "btn"
 }
 }
 
