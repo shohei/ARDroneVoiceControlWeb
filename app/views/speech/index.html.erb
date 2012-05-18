@@ -13,6 +13,11 @@
  width : 200px;
  font-size : 20px;
 }
+#recognition {
+  font-size: 250px;
+  height: 70px;
+  width : 50px;
+}
 </style>
 <script>
 function speechInput() {
@@ -21,6 +26,7 @@ var textarea = document.getElementById('talk_name')
 textarea.value = recognized;
 document.superform.submit();
 }
+
 function toggleLang(){
 var current_lang = document.documentElement.lang
 if (current_lang == "ja" ) {
@@ -40,7 +46,6 @@ var textarea = document.getElementById('talk_name')
 textarea.value = "emergency stop";
 document.superform.submit();
 }
-
 </script>
 </head> 
 <body> 
@@ -58,6 +63,7 @@ document.superform.submit();
 <% end %>
 <br />
 <br />
+
 
 <input type="text" id="recognition" x-webkit-speech onwebkitspeechchange="speechInput();" />
 
