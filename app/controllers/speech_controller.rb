@@ -1,17 +1,17 @@
 # -*- coding: utf-8 -*-
 class SpeechController < ApplicationController
   #辞書領域
-  @@forward = ['forward','全身','前進','前身']
-  @@backward = ['backward','後退','交代','抗体','交替']
+  @@forward = ['forward','全身','前進','前身','前','まえ']
+  @@backward = ['backward','後退','交代','抗体','交替','大体','5歳','後ろ','むしろ']
   @@goleft = ['go left','左旋回']
   @@goright = ['go right','右旋回']
-  @@takeoff = ['take off','離陸','take']
+  @@takeoff = ['take off','離陸','take','リリック','milk','戸部','飛べ']
   @@landing = ['touch down','着陸','landing']
   @@emergency_stop = ['emergency stop','緊急停止']
   @@turning_right = ['turn right','右回転']
   @@turning_left = ['turn left','左回転']
-  @@goup = ['go up','上昇']
-  @@godown = ['go down','下降','加工']
+  @@goup = ['go up','上昇','うえ','上','植え','飢え']
+  @@godown = ['go down','下降','加工','下']
   @@frontcamera = ['front camera','前']
   @@bothcamera = ['both camera','両方']
   @@verticalcamera = ['vertical camera','空撮']
